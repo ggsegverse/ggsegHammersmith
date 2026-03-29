@@ -9,4 +9,7 @@
 #' @return A [ggseg.formats::ggseg_atlas] object (subcortical).
 #' @import ggseg.formats
 #' @export
+#' @examples
+#' hammersmith()
+#' plot(hammersmith())
 hammersmith <- function() .hammersmith
