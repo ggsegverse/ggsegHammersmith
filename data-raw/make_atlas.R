@@ -12,7 +12,10 @@ library(ggseg.formats)
 Sys.setenv(FREESURFER_HOME = "/Applications/freesurfer/7.4.1")
 
 atlases <- create_wholebrain_from_volume(
-  input_volume = here::here("data-raw", "source", "Hammers_mith_atlas_n30r83_SPM5.nii.gz"),
+  input_volume = here::here(
+    "data-raw", "source",
+    "Hammers_mith_atlas_n30r83_SPM5.nii.gz"
+  ),
   input_lut = here::here("data-raw", "source", "Hammersmith_LUT.txt"),
   atlas_name = "hammersmith",
   output_dir = "data-raw",

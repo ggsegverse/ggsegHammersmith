@@ -12,4 +12,4 @@
 #' @examples
 #' hammersmith()
 #' plot(hammersmith())
-hammersmith <- function() .hammersmith
+hammersmith <- function() .hammersmith # nolint: object_usage_linter.
