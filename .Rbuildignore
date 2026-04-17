@@ -8,3 +8,5 @@
 ^_pkgdown\.yml$
 pkgdown
 docs
+^codemeta\.json$
+^Rplots\.pdf$
