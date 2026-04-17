@@ -11,8 +11,6 @@ describe("hammersmith_cortical atlas", {
   })
 
   it("renders with ggseg", {
-    skip_if_not_installed("ggseg")
-    skip_if_not_installed("ggplot2")
     p <- plot(hammersmith_cortical()) + ggplot2::theme_void()
     expect_s3_class(p, "gg")
   })
