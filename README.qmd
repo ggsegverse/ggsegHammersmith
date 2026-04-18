@@ -1,13 +1,27 @@
-
+---
+format: gfm
+---
 
 <!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  fig.width = 10,
+  fig.retina = 3
+)
+```
 
 # ggsegHammersmith
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/ggsegverse/ggsegHammersmith/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegHammersmith/actions/workflows/R-CMD-check.yaml)
-[![r-universe](https://ggseg.r-universe.dev/badges/ggsegHammersmith.png)](https://ggseg.r-universe.dev/ggsegHammersmith)
+[![r-universe](https://ggseg.r-universe.dev/badges/ggsegHammersmith)](https://ggseg.r-universe.dev/ggsegHammersmith)
 <!-- badges: end -->
 
 Hammersmith Brain Atlas for the ggseg ecosystem.
@@ -17,7 +31,9 @@ Hammersmith Brain Atlas for the ggseg ecosystem.
 We recommend installing the ggseg-atlases through the ggseg
 [r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-``` r
+```{r}
+#| label: install-r-universe
+#| eval: false
 options(repos = c(
   ggseg = "https://ggseg.r-universe.dev",
   CRAN = "https://cloud.r-project.org"
@@ -28,14 +44,15 @@ install.packages("ggsegHammersmith")
 
 You can install this package from [GitHub](https://github.com/) with:
 
-``` r
+```r
 # install.packages("pak")
 pak::pak("ggsegverse/ggsegHammersmith")
 ```
 
 ## Cortical atlas
 
-``` r
+```{r}
+#| label: cortical
 library(ggseg)
 library(ggsegHammersmith)
 library(ggplot2)
@@ -51,11 +68,10 @@ ggplot() +
   theme_void()
 ```
 
-<img src="man/figures/README-cortical-1.png" style="width:100.0%" />
-
 ## Subcortical atlas
 
-``` r
+```{r}
+#| label: subcortical
 ggplot() +
   geom_brain(
     atlas = hammersmith_subcortical(),
@@ -67,14 +83,11 @@ ggplot() +
   theme_void()
 ```
 
-<img src="man/figures/README-subcortical-1.png" style="width:100.0%" />
-
 ## Data source
 
-Hammers A et al. (2003). Three-dimensional maximum probability atlas of
-the human brain, with particular reference to the temporal lobe. *Human
-Brain Mapping*, 19(4), 224-247.
+Hammers A et al. (2003). Three-dimensional maximum probability atlas of the
+human brain, with particular reference to the temporal lobe. *Human Brain
+Mapping*, 19(4), 224-247.
 [doi:10.1016/S1053-8119(03)00165-7](https://doi.org/10.1016/S1053-8119(03)00165-7)
 
-Data obtained from
-[brain-development.org](http://brain-development.org/brain-atlases/adult-brain-atlases/).
+Data obtained from [brain-development.org](http://brain-development.org/brain-atlases/adult-brain-atlases/).
