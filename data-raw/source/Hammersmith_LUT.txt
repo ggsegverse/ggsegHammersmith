@@ -1,83 +1,83 @@
-1 Hippocampus_r 0 0 0 0
-2 Hippocampus_l 0 0 0 0
-3 Amygdala_r 0 0 0 0
-4 Amygdala_l 0 0 0 0
-5 Ant_TL_med_r 0 0 0 0
-6 Ant_TL_med_l 0 0 0 0
-7 Ant_TL_inf_lat_r 0 0 0 0
-8 Ant_TL_inf_lat_l 0 0 0 0
-9 G_paraH_amb_r 0 0 0 0
-10 G_paraH_amb_l 0 0 0 0
-11 G_sup_temp_cent_r 0 0 0 0
-12 G_sup_temp_cent_l 0 0 0 0
-13 G_tem_midin_r 0 0 0 0
-14 G_tem_midin_l 0 0 0 0
-15 G_occtem_la_r 0 0 0 0
-16 G_occtem_la_l 0 0 0 0
-17 Cerebellum_r 0 0 0 0
-18 Cerebellum_l 0 0 0 0
-19 Brainstem 0 0 0 0
-20 Insula_l 0 0 0 0
-21 Insula_r 0 0 0 0
-22 OL_rest_lat_l 0 0 0 0
-23 OL_rest_lat_r 0 0 0 0
-24 G_cing_ant_sup_l 0 0 0 0
-25 G_cing_ant_sup_r 0 0 0 0
-26 G_cing_post_l 0 0 0 0
-27 G_cing_post_r 0 0 0 0
-28 FL_mid_fr_G_l 0 0 0 0
-29 FL_mid_fr_G_r 0 0 0 0
-30 PosteriorTL_l 0 0 0 0
-31 PosteriorTL_r 0 0 0 0
-32 PL_rest_l 0 0 0 0
-33 PL_rest_r 0 0 0 0
-34 CaudateNucl_l 0 0 0 0
-35 CaudateNucl_r 0 0 0 0
-36 NuclAccumb_l 0 0 0 0
-37 NuclAccumb_r 0 0 0 0
-38 Putamen_l 0 0 0 0
-39 Putamen_r 0 0 0 0
-40 Thalamus_l 0 0 0 0
-41 Thalamus_r 0 0 0 0
-42 Pallidum_l 0 0 0 0
-43 Pallidum_r 0 0 0 0
-44 Corp_Callosum 0 0 0 0
-45 FrontalHorn_r 0 0 0 0
-46 FrontalHorn_l 0 0 0 0
-47 TemporaHorn_r 0 0 0 0
-48 TemporaHorn_l 0 0 0 0
-49 ThirdVentricl 0 0 0 0
-50 FL_precen_G_l 0 0 0 0
-51 FL_precen_G_r 0 0 0 0
-52 FL_strai_G_l 0 0 0 0
-53 FL_strai_G_r 0 0 0 0
-54 FL_OFC_AOG_l 0 0 0 0
-55 FL_OFC_AOG_r 0 0 0 0
-56 FL_inf_fr_G_l 0 0 0 0
-57 FL_inf_fr_G_r 0 0 0 0
-58 FL_sup_fr_G_l 0 0 0 0
-59 FL_sup_fr_G_r 0 0 0 0
-60 PL_postce_G_l 0 0 0 0
-61 PL_postce_G_r 0 0 0 0
-62 PL_sup_pa_G_l 0 0 0 0
-63 PL_sup_pa_G_r 0 0 0 0
-64 OL_ling_G_l 0 0 0 0
-65 OL_ling_G_r 0 0 0 0
-66 OL_cuneus_l 0 0 0 0
-67 OL_cuneus_r 0 0 0 0
-68 FL_OFC_MOG_l 0 0 0 0
-69 FL_OFC_MOG_r 0 0 0 0
-70 FL_OFC_LOG_l 0 0 0 0
-71 FL_OFC_LOG_r 0 0 0 0
-72 FL_OFC_POG_l 0 0 0 0
-73 FL_OFC_POG_r 0 0 0 0
-74 S_nigra_l 0 0 0 0
-75 S_nigra_r 0 0 0 0
-76 Subgen_antCing_l 0 0 0 0
-77 Subgen_antCing_r 0 0 0 0
-78 Subcall_area_l 0 0 0 0
-79 Subcall_area_r 0 0 0 0
-80 Presubgen_antCing_l 0 0 0 0
-81 Presubgen_antCing_r 0 0 0 0
-82 G_sup_temp_ant_l 0 0 0 0
-83 G_sup_temp_ant_r 0 0 0 0
+  1  Hippocampus_r            248 118 109   0  subcortical
+  2  Hippocampus_l            245 121  97   0  subcortical
+  3  Amygdala_r               242 124  84   0  subcortical
+  4  Amygdala_l               239 128  70   0  subcortical
+  5  Ant_TL_med_r             235 131  52   0  cortical
+  6  Ant_TL_med_l             231 134  26   0  cortical
+  7  Ant_TL_inf_lat_r         227 137   0   0  cortical
+  8  Ant_TL_inf_lat_l         222 140   0   0  cortical
+  9  G_paraH_amb_r            217 143   0   0  cortical
+ 10  G_paraH_amb_l            212 146   0   0  cortical
+ 11  G_sup_temp_cent_r        207 149   0   0  cortical
+ 12  G_sup_temp_cent_l        201 151   0   0  cortical
+ 13  G_tem_midin_r            195 154   0   0  cortical
+ 14  G_tem_midin_l            189 157   0   0  cortical
+ 15  G_occtem_la_r            182 159   0   0  cortical
+ 16  G_occtem_la_l            175 162   0   0  cortical
+ 17  Cerebellum_r             167 164   0   0  subcortical
+ 18  Cerebellum_l             159 166   0   0  subcortical
+ 19  Brainstem                151 169   0   0  subcortical
+ 20  Insula_l                 142 171   0   0  cortical
+ 21  Insula_r                 132 173   0   0  cortical
+ 22  OL_rest_lat_l            121 175   0   0  cortical
+ 23  OL_rest_lat_r            109 177   0   0  cortical
+ 24  G_cing_ant_sup_l          94 178   0   0  cortical
+ 25  G_cing_ant_sup_r          77 180   0   0  cortical
+ 26  G_cing_post_l             55 182   0   0  cortical
+ 27  G_cing_post_r              4 183   6   0  cortical
+ 28  FL_mid_fr_G_l              0 185  43   0  cortical
+ 29  FL_mid_fr_G_r              0 186  62   0  cortical
+ 30  PosteriorTL_l              0 187  77   0  cortical
+ 31  PosteriorTL_r              0 188  90   0  cortical
+ 32  PL_rest_l                  0 189 102   0  cortical
+ 33  PL_rest_r                  0 190 113   0  cortical
+ 34  CaudateNucl_l              0 191 123   0  subcortical
+ 35  CaudateNucl_r              0 192 133   0  subcortical
+ 36  NuclAccumb_l               0 192 143   0  subcortical
+ 37  NuclAccumb_r               0 192 152   0  subcortical
+ 38  Putamen_l                  0 193 160   0  subcortical
+ 39  Putamen_r                  0 193 169   0  subcortical
+ 40  Thalamus_l                 0 192 177   0  subcortical
+ 41  Thalamus_r                 0 192 185   0  subcortical
+ 42  Pallidum_l                 0 191 193   0  subcortical
+ 43  Pallidum_r                 0 191 200   0  subcortical
+ 44  Corp_Callosum              0 190 207   0  subcortical
+ 45  FrontalHorn_r              0 188 214   0  subcortical
+ 46  FrontalHorn_l              0 187 220   0  subcortical
+ 47  TemporaHorn_r              0 185 227   0  subcortical
+ 48  TemporaHorn_l              0 183 232   0  subcortical
+ 49  ThirdVentricl              0 181 238   0  subcortical
+ 50  FL_precen_G_l              0 178 243   0  cortical
+ 51  FL_precen_G_r              0 175 247   0  cortical
+ 52  FL_strai_G_l               0 172 251   0  cortical
+ 53  FL_strai_G_r               0 169 255   0  cortical
+ 54  FL_OFC_AOG_l               0 165 255   0  cortical
+ 55  FL_OFC_AOG_r              55 161 255   0  cortical
+ 56  FL_inf_fr_G_l             89 157 255   0  cortical
+ 57  FL_inf_fr_G_r            112 153 255   0  cortical
+ 58  FL_sup_fr_G_l            131 149 255   0  cortical
+ 59  FL_sup_fr_G_r            147 144 255   0  cortical
+ 60  PL_postce_G_l            162 139 255   0  cortical
+ 61  PL_postce_G_r            175 135 255   0  cortical
+ 62  PL_sup_pa_G_l            186 130 255   0  cortical
+ 63  PL_sup_pa_G_r            197 125 255   0  cortical
+ 64  OL_ling_G_l              206 121 255   0  cortical
+ 65  OL_ling_G_r              214 116 253   0  cortical
+ 66  OL_cuneus_l              222 112 249   0  cortical
+ 67  OL_cuneus_r              229 109 245   0  cortical
+ 68  FL_OFC_MOG_l             235 105 240   0  cortical
+ 69  FL_OFC_MOG_r             240 103 234   0  cortical
+ 70  FL_OFC_LOG_l             244 100 228   0  cortical
+ 71  FL_OFC_LOG_r             248  98 222   0  cortical
+ 72  FL_OFC_POG_l             251  97 216   0  cortical
+ 73  FL_OFC_POG_r             253  97 208   0  cortical
+ 74  S_nigra_l                255  97 201   0  subcortical
+ 75  S_nigra_r                255  97 193   0  subcortical
+ 76  Subgen_antCing_l         255  98 185   0  cortical
+ 77  Subgen_antCing_r         255 100 177   0  cortical
+ 78  Subcall_area_l           255 102 168   0  cortical
+ 79  Subcall_area_r           255 104 159   0  cortical
+ 80  Presubgen_antCing_l      255 107 150   0  cortical
+ 81  Presubgen_antCing_r      254 109 141   0  cortical
+ 82  G_sup_temp_ant_l         252 112 130   0  cortical
+ 83  G_sup_temp_ant_r         250 115 120   0  cortical
