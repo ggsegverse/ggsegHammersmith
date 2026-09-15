@@ -1,4 +1,4 @@
-# ggsegHammersmith 1.1.0
+# ggsegHammersmith 1.0.0.9001
 
 Both atlases are rebuilt from source against the current ggseg.extra pipeline.
 
