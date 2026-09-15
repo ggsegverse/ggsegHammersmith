@@ -32,4 +32,14 @@ Both atlases are rebuilt from source against the current ggseg.extra pipeline.
   trusting the header, removing the roughly 2 mm MNI305 offset.
 - Subcortical slabs are framed on the label bounding box, and the geometry is
   explicitly simplified and smoothed, which cuts the cortical atlas from
-  22,250 to 7,311 vertices and the subcortical atlas from 10,755 to 8,770.
+  22,250 to 7,311 vertices and the subcortical atlas from 10,755 to 9,695.
+- **The grey brain outline behind the subcortical structures keeps its
+  detail.** It used to be polished like a parcel, and simplifying at 0.5 and
+  then smoothing left it with 19 of its 46 rings. The parcels keep their
+  settings; the outline is now only lightly simplified and never smoothed,
+  and keeps 45 of the 46.
+
+  The outline still has no sulci, and no polish setting can give it any. The
+  whole-brain pipeline builds it from the union of the atlas's own cortical
+  labels, and Hammersmith's manual parcels run across the sulci, so the
+  silhouette is already solid in the volume.

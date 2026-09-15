@@ -40,11 +40,24 @@ atlases <- create_wholebrain_from_volume(
   method = "chaikin"
 )
 
-.hammersmith_subcortical <- atlas_smooth(
-  atlas_simplify(atlases$subcortical, keep = 0.5),
-  smoothness = 0.4,
-  method = "chaikin"
-)
+# The grey `cortex_` backdrop is context, not a parcel. Its small islands
+# and holes are what makes it read as a brain, and polishing it like a
+# parcel eats them: simplifying at 0.5 and then smoothing took the
+# outline from 46 rings to 19. The parcels keep their settings; the
+# context is only lightly simplified and never smoothed, which keeps 45
+# of the 46.
+#
+# The outline still has no sulci, and no polish setting can give it any:
+# the whole-brain pipeline builds the context from the union of the
+# atlas's own cortical labels, and Hammersmith's manual parcels run
+# across the sulci, so the mantle is already solid in the volume. A
+# sulcal outline would have to come from a cortical ribbon (the aseg one,
+# as `ggsegHO`'s `ho_sub` uses), which is a change to `ggseg.extra`, not
+# to this script.
+.hammersmith_subcortical <- atlases$subcortical |>
+  atlas_simplify(keep = 0.5, exclude = "^cortex") |>
+  atlas_smooth(smoothness = 0.4, method = "chaikin", exclude = "^cortex") |>
+  atlas_simplify(keep = 0.9, labels = "^cortex")
 
 usethis::use_data(
   .hammersmith_cortical, .hammersmith_subcortical,
