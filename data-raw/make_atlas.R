@@ -29,7 +29,7 @@ atlases <- create_wholebrain_from_volume(
   input_lut = here::here("data-raw", "source", "Hammersmith_LUT.txt"),
   atlas_name = "hammersmith",
   output_dir = "data-raw",
-  registration = "mni152",
+  projection_opts = list(registration = "mni152"),
   skip_existing = TRUE,
   cleanup = FALSE
 )
