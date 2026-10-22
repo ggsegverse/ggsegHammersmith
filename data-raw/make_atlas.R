@@ -29,7 +29,7 @@ atlases <- create_wholebrain_from_volume(
   input_lut = here::here("data-raw", "source", "Hammersmith_LUT.txt"),
   atlas_name = "hammersmith",
   output_dir = "data-raw",
-  registration = "mni152",
+  projection_opts = list(registration = "mni152"),
   skip_existing = TRUE,
   cleanup = FALSE
 )
@@ -54,10 +54,15 @@ atlases <- create_wholebrain_from_volume(
 # sulcal outline would have to come from a cortical ribbon (the aseg one,
 # as `ggsegHO`'s `ho_sub` uses), which is a change to `ggseg.extra`, not
 # to this script.
+# Seven slabs, of which four drew a few structures on mostly backdrop --
+# axial_1 showed 3 of the 25 regions. Kept the slab that draws the most
+# regions in each plane: axial_2 (25 regions, 60% of the panel), coronal_2
+# (23, 69%) and sagittal_left (17, 80%). Every region is still drawn.
 .hammersmith_subcortical <- atlases$subcortical |>
   atlas_simplify(keep = 0.5, exclude = "^cortex") |>
   atlas_smooth(smoothness = 0.4, method = "chaikin", exclude = "^cortex") |>
-  atlas_simplify(keep = 0.9, labels = "^cortex")
+  atlas_simplify(keep = 0.9, labels = "^cortex") |>
+  atlas_view_keep(c("axial_2", "coronal_2", "sagittal_left"))
 
 usethis::use_data(
   .hammersmith_cortical, .hammersmith_subcortical,
